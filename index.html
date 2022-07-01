@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+</head>
+
+<body class="main-bg">
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label for="close-menu" class="close-menu-label" title="close menu"></label>
+
+    <!-- Menu do Site   -->
+    <aside class="menu white-bg">
+        <div class="main-content menu-content">
+            <h1 onclick="getElementById('close-menu').checked = false">
+                <a href="#home">C<i class="bi bi-file-code-fill"></i>DE</a>
+            </h1>
+            <nav> 
+                <ul onclick="getElementById('close-menu').checked = false" >
+                    <li><a href="#intro">intro</a> </li>
+                    <li><a href="#grid-one">Grid One</a> </li>
+                    <li><a href="#gallery">Gallery</a> </li>
+                    <li><a href="#grid-two">Grid Two</a> </li>
+                    <li><a href="#pricing">Pricing</a> </li>
+                    <li><a href="#contact">Contact</a> </li>
+                </ul>
+            </nav>
+        </div>
+
+    </aside>
+
+    <!-- Empurrar o conteudo para baixo do menu, devido position fixed do menu -->
+    <div class="menu-spacing"></div>
+
+
+    <!-- HOME Site -->
+    <section id="home" class="intro main-bg section">
+        <div class="main-content intro-content">
+            <div class="intro-text-content">
+                <H3>C<i class="bi bi-file-code-fill"></i>DE</H3>
+                <h5>Codigo além do seu negócio</h5>
+            </div>
+            <div class="intro-img">
+
+                <img src="/assets/img/javascript-img.svg" alt="Imagem Javascript">
+
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- Sobre -->
+    <section id="intro" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>TOP 3 Jobs</h2>
+            <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web —
+                toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática —
+                mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D
+                animados, etc
+            </p>
+
+            <p>CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido para o português, significa
+                Folha de Estilo em Cascatas. O CSS é fácil de aprender e entender e é facilmente utilizado com as
+                linguagens de marcação HTML ou XHTML.
+            </p>
+            <p>
+                HTML (Linguagem de Marcação de Hipertexto) é o código que você usa para estruturar uma página web e seu
+                conteúdo. Por exemplo, o conteúdo pode ser estruturado em parágrafos, em uma lista com marcadores ou
+                usando imagens e tabelas. Como o título sugere, este artigo fornecerá uma compreensão básica do HTML e
+                suas funções.
+            </p>
+        </div>
+    </section>
+
+    <!--  GRID 3 colunas  -->
+    <section id="grid-one" class="grid-one main-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">My Drid</h2>
+            <p class="grid-description">Drescição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste One</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet vel dicta eligendi nulla
+                        reprehenderit
+                        quae dolores nisi est deleniti laborum aut facilis eius harum, repudiandae similique nesciunt in
+                        nihil
+                        ipsam?</p>
+                </article>
+                <article>
+                    <h3>Teste Two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus numquam repellat,
+                        asperiores
+                        ducimus modi perspiciatis doloremque fugit animi rerum odio sed, repudiandae ad deserunt
+                        eveniet, dolore
+                        mollitia nemo. Asperiores, quasi.</p>
+                </article>
+
+                <article>
+                    <h3>Teste Tree</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus numquam repellat,
+                        asperiores
+                        ducimus modi perspiciatis doloremque fugit animi rerum odio sed, repudiandae ad deserunt
+                        eveniet, dolore
+                        mollitia nemo. Asperiores, quasi.</p>
+                </article>
+
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+    <!--    Gallery-->
+    <section id="gallery" class="grid-one white-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">Gallery</h2>
+            <p class="grid-description">Drescição</p>
+            <div class="grid">
+
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=1" alt="Random Image">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=2" alt="Random Image">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=3" alt="Random Image">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=4" alt="Random Image">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=5" alt="Random Image">
+                </div>
+                <div class="gallery-img">
+                    <img src="https://source.unsplash.com/random/360x360?r=6" alt="Random Image">
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+    <!--  GRID 3 colunas  -->
+    <section id="grid-two" class="grid-one main-bg section">
+        <div class="grid-one-content main-content">
+            <h2 class="grid-main-heading">My Drid</h2>
+            <p class="grid-description">Drescição</p>
+            <div class="grid">
+                <article>
+                    <h3>Teste One</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet vel dicta eligendi nulla
+                        reprehenderit
+                        quae dolores nisi est deleniti laborum aut facilis eius harum, repudiandae similique nesciunt in
+                        nihil
+                        ipsam?</p>
+                </article>
+                <article>
+                    <h3>Teste Two</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus numquam repellat,
+                        asperiores
+                        ducimus modi perspiciatis doloremque fugit animi rerum odio sed, repudiandae ad deserunt
+                        eveniet, dolore
+                        mollitia nemo. Asperiores, quasi.</p>
+                </article>
+
+                <article>
+                    <h3>Teste Tree</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus numquam repellat,
+                        asperiores
+                        ducimus modi perspiciatis doloremque fugit animi rerum odio sed, repudiandae ad deserunt
+                        eveniet, dolore
+                        mollitia nemo. Asperiores, quasi.</p>
+                </article>
+
+            </div>
+
+
+
+
+        </div>
+
+    </section>
+
+    <!-- Secao Preco -->
+    <section id="pricing" class="white-bg section">
+        <div class="main-content top3-content">
+            <h2>Pricing</h2>
+            <p>JavaScript é uma linguagem de programação que permite a você implementar itens complexos em páginas web —
+                toda vez que uma página da web faz mais do que simplesmente mostrar a você informação estática —
+                mostrando conteúdo que se atualiza em um intervalo de tempo, mapas interativos ou gráficos 2D/3D
+                animados, etc
+            </p>
+
+            <p>CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido para o português, significa
+                Folha de Estilo em Cascatas. O CSS é fácil de aprender e entender e é facilmente utilizado com as
+                linguagens de marcação HTML ou XHTML.
+            </p>
+
+            <div class="responsive-table">
+                <table>
+                    <caption>
+                        Pricing Table
+                    </caption>
+
+                    <thead>
+                        <tr>
+                            <th>Title 1</th>
+                            <th>Title 2</th>
+                            <th>Title 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Content 1</td>
+                            <td>Content 2</td>
+                            <td>Content 3</td>
+                        </tr>
+                        <tr>
+                            <td>Content 5</td>
+                            <td>Content 6</td>
+                            <td>Content 7</td>
+                        </tr>
+                        <tr>
+                            <td>Content 9</td>
+                            <td>Content 8</td>
+                            <td>Content 4</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>Testando</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Secao Contact-->
+    <section id="contact" class="intro maing-bg section">
+        <div class="main-content intro-content">
+            <div>
+                <H3>C<i class="bi bi-file-code-fill"></i>DE</H3>
+                <h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor modi eaque aliquid adipisci veniam,
+                    quisquam!</h5>
+            </div>
+            <div class="intro-img">
+                <img src="/assets/img/javascript-img.svg" alt="Imagem Javascript">
+            </div>
+            <div class="contact-form">
+                <fieldset class="form-grid">
+                    <legend>Contact me</legend>
+
+                    <div class="form-group">
+                        <label for="first-name">first-name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Your Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name">Last-name</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Your Last Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    </div>
+                    <div class="form-group full-width">
+                        <button type="submit"> Send Message</button>
+                    </div>
+                    
+                </fieldset>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer" class=" footer white-bg">
+        <a rel="nofollow" href="#" target="_blank">
+        <p>Feito pelo Wallace</p></a>
+    </footer>
+
+    <a href="#" class="back-to-top">></a>
+
+</body>
+
+</html>
